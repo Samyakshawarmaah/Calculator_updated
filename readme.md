@@ -90,19 +90,6 @@ project-folder/
 
 ---
 
-## Screenshots
-
-1. **Default Dark Theme**
-   ![Dark Theme](screenshot-dark.png)
-
-2. **Light Theme**
-   ![Light Theme](screenshot-light.png)
-
-3. **Unit Conversion**
-   ![Unit Conversion](screenshot-unit-conversion.png)
-
----
-
 ## Future Improvements
 - Add graph plotting functionality.
 - Include additional unit conversions (e.g., temperature, speed).
