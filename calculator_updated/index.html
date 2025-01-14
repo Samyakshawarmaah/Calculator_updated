@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <button id="themeButton" class="theme-toggle">Toggle Theme</button>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" readonly>
+        </div>
+        <div class="history">
+            <button id="historyButton">History</button>
+            <div id="historyContainer"></div>
+        </div>
+        <div class="buttons">
+            <button onclick="clearResult()">C</button>
+            <button onclick="appendValue('%')">%</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="appendValue('/')">/</button>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('*')">*</button>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('-')">-</button>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('+')">+</button>
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="appendValue('Math.sqrt(')">√</button>
+            <button class="equals" onclick="calculateResult()">=</button>
+        </div>
+        <div class="advanced">
+            <button onclick="appendValue('Math.sin(')">sin</button>
+            <button onclick="appendValue('Math.cos(')">cos</button>
+            <button onclick="appendValue('Math.tan(')">tan</button>
+            <button onclick="appendValue('Math.log(')">log</button>
+            <button onclick="appendValue('**')">x^y</button>
+            <button onclick="appendValue('Math.exp(')">e^x</button>
+            <button onclick="memoryStore()">M+</button>
+            <button onclick="memoryRecall()">MR</button>
+            <button onclick="memoryClear()">MC</button>
+        </div>
+        <div class="unit-conversion">
+            <h3>Unit Conversion</h3>
+            <input type="number" id="unitInput" placeholder="Enter value">
+            <select id="unitType">
+                <option value="cmToInches">cm to inches</option>
+                <option value="inchesToCm">inches to cm</option>
+                <option value="kgToLbs">kg to lbs</option>
+                <option value="lbsToKg">lbs to kg</option>
+            </select>
+            <button onclick="convertUnit()">Convert</button>
+            <div id="unitResult"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
